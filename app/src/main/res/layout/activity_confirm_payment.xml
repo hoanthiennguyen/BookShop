@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingLeft="10dp"
+    tools:context="fptt.example.bookshop.ConfirmPaymentActivity">
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_marginTop="50dp"
+        android:layout_height="wrap_content">
+        <TextView
+
+            android:id="@+id/textViewTotal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:text="Tổng tiền :"
+            android:textSize="18dp" />
+        <TextView
+            android:layout_marginLeft="10dp"
+            android:textSize="18dp"
+            android:text="0 đ"
+            android:id="@+id/txtTotal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+
+
+        <TextView
+            android:textSize="18sp"
+            android:text="Chọn địa chỉ"
+            android:layout_marginTop="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+
+    <ListView
+        android:paddingLeft="10dp"
+        android:id="@+id/listViewAddress"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"></ListView>
+    <EditText
+        android:layout_marginLeft="20dp"
+        android:id="@+id/txtNewAddress"
+        android:visibility="gone"
+        android:hint="Địa chỉ"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+    <TextView
+        android:layout_marginLeft="25dp"
+        android:onClick="onClickAddMoreAddress"
+        android:gravity="center"
+        android:id="@+id/buttonAddAddress"
+        android:layout_width="wrap_content"
+        android:text="Thêm địa chỉ"
+        android:layout_height="35sp"
+        android:paddingHorizontal="10dp"
+        android:background="@drawable/roundbuttongreen"
+       />
+    <TextView
+        android:textSize="18dp"
+        android:layout_marginTop="10dp"
+        android:text="Phương thức thanh toán"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+
+
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_marginRight="15dp"
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:src="@drawable/zalopay"
+                android:layout_width="40dp"
+                android:layout_height="40dp"/>
+            <ImageView
+                android:src="@drawable/viettelpay"
+                android:layout_marginTop="10dp"
+                android:layout_width="40dp"
+                android:layout_height="40dp"/>
+            <ImageView
+                android:layout_marginTop="10dp"
+                android:src="@drawable/momopay"
+                android:layout_width="40dp"
+                android:layout_height="40dp"/>
+        </LinearLayout>
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <TextView
+                android:text="ZaloPay"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"/>
+            <TextView
+                android:text="ViettelPay"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"/>
+            <TextView
+                android:text="Momo"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"/>
+        </LinearLayout>
+        <LinearLayout
+            android:gravity="end"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:layout_marginEnd="5dp"
+            android:orientation="vertical" >
+
+            <RadioGroup
+                android:id="@+id/radioGroup"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <RadioButton
+                    android:checked="true"
+                    android:id="@+id/radioZalopPay"
+                    android:gravity="top"
+                    android:layout_width="wrap_content"
+                    android:layout_height="50dp"
+                    />
+                <RadioButton
+                    android:gravity="top"
+                    android:layout_width="wrap_content"
+                    android:layout_height="50dp"
+                    />
+                <RadioButton
+                    android:gravity="top"
+                    android:layout_width="wrap_content"
+                    android:layout_height="50dp"
+                    />
+            </RadioGroup>
+        </LinearLayout>
+
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/bottomLayout"
+        android:layout_width="match_parent"
+        android:layout_height="54dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="0dp"
+        android:orientation="horizontal">
+
+
+
+
+        <Button
+            android:id="@+id/btnContinue"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:onClick="onClickMakePayment"
+            android:background="@color/colorPrimary"
+            android:text="Thanh toán"
+            android:textSize="22dp" />
+
+
+
+    </LinearLayout>
+
+
+</LinearLayout>
+

@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="fptt.example.bookshop.ProfileFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/app_background_color"
+        android:orientation="vertical"
+        android:padding="10dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:paddingVertical="5dp">
+
+                <TextView
+                    android:id="@+id/txtInfoTitle"
+                    style="@style/CustomTextViewTitleProfile"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentLeft="true"
+                    android:drawableLeft="@drawable/ic_person_outline_black_24dp"
+                    android:drawablePadding="10dp"
+                    android:gravity="center"
+                    android:text="@string/user_information" />
+                <TextView
+                    android:id="@+id/btnEditProfile"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="30dp"
+                    android:layout_toRightOf="@id/txtInfoTitle"
+                    android:background="@drawable/ic_edit_black_24dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+            </RelativeLayout>
+
+            <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingHorizontal="15dp"
+                android:shrinkColumns="*"
+                android:stretchColumns="*">
+
+                <TableRow android:layout_marginTop="10dp">
+
+                    <TextView
+                        android:text="Họ và tên"
+                        android:textSize="@dimen/text_size_content" />
+
+                    <TextView
+                        android:text="Chưa cập nhật"
+                        android:id="@+id/txtFullname"
+                        android:textSize="@dimen/text_size_content" />
+                </TableRow>
+
+                <TableRow android:layout_marginTop="10dp">
+
+                    <TextView
+                        android:text="Email"
+                        android:textSize="@dimen/text_size_content" />
+
+                    <TextView
+                        android:text="Chưa cập nhật"
+                        android:id="@+id/txtEmail"
+                        android:textSize="@dimen/text_size_content" />
+                </TableRow>
+
+                <TableRow android:layout_marginTop="10dp">
+
+                    <TextView
+                        android:text="Số điện thoại"
+                        android:textSize="@dimen/text_size_content" />
+
+                    <TextView
+                        android:text="Chưa cập nhật"
+                        android:id="@+id/txtPhone"
+                        android:textSize="@dimen/text_size_content" />
+
+                </TableRow>
+                <TableRow android:layout_marginTop="10dp">
+
+                    <TextView
+                        android:text="Địa chỉ: "
+                        android:textSize="@dimen/text_size_content" />
+
+                    <TextView
+                        android:text="Chưa cập nhật"
+                        android:id="@+id/txtAddress"
+                        android:textSize="@dimen/text_size_content" />
+
+                </TableRow>
+            </TableLayout>
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="16dp">
+
+                <TextView
+                    android:id="@+id/btnLogout"
+                    android:layout_marginLeft="5dp"
+                    style="@style/CustomTextViewTitleProfile"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentLeft="true"
+                    android:drawableLeft="@drawable/logout"
+                    android:drawablePadding="10dp"
+                    android:onClick="onLogout"
+                    android:gravity="center"
+                    android:text="@string/logout" />
+
+
+            </RelativeLayout>
+
+
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+
+</RelativeLayout>

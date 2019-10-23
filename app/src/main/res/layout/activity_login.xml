@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="fptt.example.bookshop.LoginActivity">
+
+
+    <ImageView
+        android:id="@+id/formBack"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        android:src="@drawable/background" />
+
+
+    <TextView
+        android:id="@+id/formLogo"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginBottom="20dp"
+        android:fontFamily="cursive"
+        android:scaleType="fitCenter"
+        android:text="Book Shop"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="60sp"
+        android:textStyle="bold" />
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/scrollView"
+        android:layout_below="@+id/formLogo"
+        android:layout_marginBottom="10dp"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:background="@drawable/trans_white_rectangle"
+            android:layout_marginStart="30dp"
+            android:layout_marginEnd="30dp"
+            >
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Chào mừng"
+                android:textColor="@color/white"
+                android:layout_marginBottom="5dp"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:paddingStart="10dp"
+                android:paddingEnd="10dp"
+                android:paddingTop="10dp"
+                />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="đăng nhập để truy cập ứng dụng."
+                android:textColor="@color/white"
+                android:textSize="14sp"
+                android:paddingStart="10dp"
+                android:paddingEnd="10dp"
+                android:layout_marginBottom="15dp"
+                />
+
+            <AutoCompleteTextView
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:hint="Tên tài khoản"
+                android:background="@drawable/rounded_white"
+                android:paddingStart="10dp"
+                android:paddingEnd="10dp"
+                android:drawableLeft="@drawable/ic_face_gray_24dp"
+                android:textSize="14sp"
+                android:drawablePadding="5dp"
+                android:id="@+id/userName123"
+                android:layout_marginBottom="10dp"
+                />
+            <AutoCompleteTextView
+                android:inputType="textPassword"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:hint="Mật khẩu"
+                android:background="@drawable/rounded_white"
+                android:paddingStart="10dp"
+                android:paddingEnd="10dp"
+                android:drawableLeft="@drawable/password"
+                android:textSize="14sp"
+                android:drawablePadding="5dp"
+                android:id="@+id/userPassword123"
+                android:layout_marginBottom="10dp"
+                />
+
+            <Button
+                android:id="@+id/btnLogin"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_gravity="center"
+                android:layout_marginStart="110dp"
+                android:layout_marginEnd="110dp"
+                android:layout_marginBottom="5dp"
+                android:background="@drawable/register_button"
+                android:text="Đăng nhập"
+                android:textSize="16sp"
+                android:fontFamily="sans-serif-black"
+                android:textColor="@color/white"
+                android:textStyle="normal"
+                android:onClick="onClickHomePage"
+                />
+            <Button
+                android:id="@+id/btnExit"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_gravity="center"
+                android:layout_marginStart="110dp"
+                android:layout_marginEnd="110dp"
+                android:layout_marginBottom="30dp"
+                android:background="@drawable/register_button"
+                android:onClick="onMoveRegisterForm"
+                android:fontFamily="sans-serif-black"
+                android:text="Đăng ký"
+                android:textSize="16sp"
+                android:textColor="@color/white"
+                android:textStyle="normal" />
+
+            <com.facebook.login.widget.LoginButton
+                android:id="@+id/login_button"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:layout_gravity="center"
+                tools:ignore="MissingConstraints" />
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

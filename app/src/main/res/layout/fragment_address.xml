@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal" android:layout_width="match_parent"
+    android:descendantFocusability="blocksDescendants"
+    android:paddingVertical="8dp"
+    android:layout_height="wrap_content">
+    <TextView
+        android:background="@drawable/unselected_bg"
+        android:id="@+id/addressCheckbox"
+        android:layout_width="16sp"
+        android:layout_height="16sp"/>
+    <TextView
+        android:focusableInTouchMode="false"
+        android:focusable="false"
+        android:layout_marginLeft="10dp"
+        android:paddingLeft="10dp"
+        android:text="123 Quang Trung, Q12"
+        android:id="@+id/addressView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+</LinearLayout>

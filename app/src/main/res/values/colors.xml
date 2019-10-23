@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#62d0e3</color>
+    <color name="colorPrimaryDark">#006FBB</color>
+    <color name="colorAccent">#D81B60</color>
+    <color name="blue">#006FBB</color>
+    <color name="bookPrice">#ff0000</color>
+    <color name="white">#ffff</color>
+    <color name="black">#000000</color>
+    <color name="colorPrimaryText">#040555</color>
+    <color name="lightgray">#ededed</color>
+    <color name="green">#4CDA4C</color>
+    <color name="app_background_color">#ffeceff1</color>
+</resources>

@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">BookShop</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="facebook_app_id">517365975497563</string>
+    <string name="fb_login_protocol_scheme">fb517365975497563</string>
+    <string name="user_information">Thông tin tài khoản</string>
+    <string name="edit_user_infor">Chỉnh sửa</string>
+    <string name="address_manager">Quản lí địa chỉ</string>
+    <string name="address_information">Thông tin địa chỉ</string>
+    <string name="book_favorite">Sách yêu thích</string>
+    <string name="referral_code">Mã giới thiệu</string>
+    <string name="renting_history">Lịch sử mua sách</string>
+    <string name="read_more">Xem thêm</string>
+    <string name="logout">Đăng xuất</string>
+</resources>

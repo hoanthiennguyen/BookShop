@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    android:paddingHorizontal="10dp"
+    tools:context="fptt.example.bookshop.EditProfileActivity">
+    <TableLayout
+        android:layout_marginTop="30sp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TableRow>
+            <TextView android:layout_weight="1" android:text="Họ và tên" />
+            <EditText android:id="@+id/txtFullname" android:layout_weight="1" android:text="Nguyễn Văn An"/>
+        </TableRow>
+        <TableRow>
+            <TextView android:layout_weight="1" android:text="Email" />
+            <EditText android:id="@+id/txtEmail" android:layout_weight="1" android:text="annv@gmail.com"/>
+        </TableRow>
+        <TableRow>
+            <TextView android:layout_weight="1" android:text="Điện thoại" />
+            <EditText android:id="@+id/txtPhone" android:layout_weight="1" android:text="0123456789"/>
+        </TableRow>
+
+        <TableRow android:layout_marginTop="30sp">
+
+        </TableRow>
+
+    </TableLayout>
+    <TextView
+    android:textSize="18sp"
+    android:text="Địa chỉ"
+    android:layout_marginTop="10dp"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"/>
+    <ListView
+        android:id="@+id/listViewAddress"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"></ListView>
+    <EditText
+        android:id="@+id/txtNewAddress"
+        android:visibility="gone"
+        android:hint="Địa chỉ"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:onClick="onClickAddMoreAddress"
+        android:gravity="center"
+        android:id="@+id/buttonAddAddress"
+        android:layout_width="wrap_content"
+        android:text="Thêm địa chỉ"
+        android:paddingHorizontal="8dp"
+        android:layout_height="35sp"
+        android:background="@drawable/roundbuttongreen"
+        />
+    <LinearLayout
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <Button android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Hủy" android:onClick="onClickCancel" />
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="onClickSave" android:layout_marginLeft="60dp" android:background="@drawable/roundbutton"  android:text="Lưu"/>
+    </LinearLayout>
+
+</LinearLayout>
